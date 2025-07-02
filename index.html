@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>당구게임 - Billiards Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>🎱 당구게임</h1>
+            <div class="score-board">
+                <div class="score">
+                    <span class="label">점수:</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="power-meter">
+                    <span class="label">파워:</span>
+                    <div class="power-bar">
+                        <div id="power-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <canvas id="gameCanvas" width="800" height="500"></canvas>
+            <div class="controls">
+                <button id="resetBtn">🔄 새 게임</button>
+                <button id="pauseBtn">⏸️ 일시정지</button>
+                <div class="instructions">
+                    <p>마우스로 큐스틱을 조작하세요. 클릭하고 드래그해서 파워를 조절하고 공을 쳐보세요!</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
